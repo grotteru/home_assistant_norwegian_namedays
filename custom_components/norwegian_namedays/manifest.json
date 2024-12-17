@@ -1,0 +1,10 @@
+{
+  "domain": "norwegian_namedays",
+  "name": "Norwegian Namedays",
+  "version": "1.0.0",
+  "documentation": "https://www.example.com/",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@grotteru"],
+  "config_flow": true
+}

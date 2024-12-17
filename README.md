@@ -1,2 +1,8 @@
-# home_assistant_norwegian_namedays
-Norwegian namedays
+# Test
+
+Display todays norwegian nameday.
+
+You will get the following sensor:
+
+* sensor.namedays_today
+

@@ -8,7 +8,8 @@ PLATFORMS = ["sensor"]
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Set up Namedays from a config entry."""
-    session = hass.helpers.aiohttp_client.async_get_clientsession()
+    from homeassistant.helpers.aiohttp_client import async_get_clientsession
+    session = async_get_clientsession(hass)
     coordinator = NamedaysUpdateCoordinator(hass, session)
 
     # Lagre koordinatoren i hass.data for senere bruk
